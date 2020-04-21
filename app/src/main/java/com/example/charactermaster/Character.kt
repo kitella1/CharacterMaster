@@ -1,6 +1,9 @@
 package com.example.charactermaster
 
 import android.content.Context
+import android.content.Intent
+import android.view.View
+import androidx.core.content.ContextCompat.startActivity
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.Serializable

@@ -6,12 +6,19 @@
     <string name="viewGrimoire">View Grimoire</string>
     <string name="title_activity_grimoire">GrimoireActivity</string>
     <string name="title_activity_character">CharacterActivity</string>
+    <string name="title_activity_character_details">CharacterDetails</string>
     <string name="character_image">Character image</string>
     <string name="details">Details</string>
     <string name="general">General</string>
+    <string name="character">Character</string>
+    <string name="abilities">Abilities</string>
     <string name="stats">Stats</string>
+    <string name="skills">Skills</string>
+    <string name="attacks">Attacks</string>
+    <string name="spells">Spells</string>
     <string name="inventory">Inventory</string>
-    <string name="background">Background</string>
-    <string name="attack">Attack</string>
-    <string name="spellcasting">Spellcasting</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

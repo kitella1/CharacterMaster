@@ -21,4 +21,9 @@ class GrimoireActivity : AppCompatActivity() {
             recyclerView.layoutManager = LinearLayoutManager(applicationContext)
         }
     }
+
+    fun characterDetails (x: View?) {
+        val newCharIntent = Intent(this, CharacterDetails::class.java)
+        startActivity(newCharIntent)
+    }
 }

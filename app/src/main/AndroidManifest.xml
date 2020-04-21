@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".newCharacter"></activity>
+        <activity
+            android:name=".CharacterDetails"
+            android:label="@string/title_activity_character_details"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".newCharacter" />
         <activity
             android:name=".CharacterActivity"
             android:label="@string/title_activity_character"
