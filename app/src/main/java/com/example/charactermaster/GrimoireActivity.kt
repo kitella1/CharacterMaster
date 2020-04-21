@@ -16,14 +16,13 @@ class GrimoireActivity : AppCompatActivity() {
         val characterList = Character.getCharacters("characters.json", this)
 
         //link to recycler view
-
         recyclerView.adapter = CharacterAdapter(this, characterList).apply {
             recyclerView.layoutManager = LinearLayoutManager(applicationContext)
         }
     }
 
     fun characterDetails (x: View?) {
-        val newCharIntent = Intent(this, CharacterDetails::class.java)
-        startActivity(newCharIntent)
+        /*val newCharIntent = Intent(this, CharacterDetails::class.java)
+        startActivity(newCharIntent)*/
     }
 }
