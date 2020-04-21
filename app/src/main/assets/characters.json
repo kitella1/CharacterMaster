@@ -1,0 +1,18 @@
+{
+  "characters": [
+    {
+      "charName": "Tanglewood",
+      "charRace": "Wood Elf",
+      "charClass": "Monk",
+      "charLevel": 9,
+      "profileImage": "tanglewood"
+    },
+    {
+      "charName": "Grunyar",
+      "charRace": "Dwarf",
+      "charClass": "Paladin",
+      "charLevel": 7,
+      "profileImage": "grunyar"
+    }
+  ]
+}

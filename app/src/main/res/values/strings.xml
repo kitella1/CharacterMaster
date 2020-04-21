@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CharacterMaster</string>
+    <string name="imgLogo">Character Master logo; winged dragon in a circle.</string>
+    <string name="appName">Character Master</string>
+    <string name="createCharacter">create character</string>
+    <string name="viewGrimoire">View Grimoire</string>
+    <string name="title_activity_grimoire">GrimoireActivity</string>
+    <string name="title_activity_character">CharacterActivity</string>
+    <string name="character_image">Character image</string>
+    <string name="details">Details</string>
+    <string name="general">General</string>
+    <string name="stats">Stats</string>
+    <string name="inventory">Inventory</string>
+    <string name="background">Background</string>
+    <string name="attack">Attack</string>
+    <string name="spellcasting">Spellcasting</string>
+</resources>
