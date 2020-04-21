@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun newCharacter (x: View?) {
-        /*val newCharIntent = Intent(this, CharacterDetails::class.java)
-        startActivity(newCharIntent)*/
+        val newCharIntent = Intent(this, CharacterDetails::class.java)
+        startActivity(newCharIntent)
     }
 
 

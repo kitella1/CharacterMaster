@@ -17,8 +17,16 @@
     <string name="attacks">Attacks</string>
     <string name="spells">Spells</string>
     <string name="inventory">Inventory</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str">STR</string>
+    <string name="dex">DEX</string>
+    <string name="con">CON</string>
+    <string name="intel">INT</string>
+    <string name="wis">WIS</string>
+    <string name="name">Name</string>
+    <string name="txtClass">Class</string>
+    <string name="level">Level</string>
+    <string name="alignment">Alignment</string>
+    <string name="race">Race</string>
+    <string name="xp">XP</string>
 
 </resources>
