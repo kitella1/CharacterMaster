@@ -21,6 +21,7 @@
     <string name="dex">DEX</string>
     <string name="con">CON</string>
     <string name="intel">INT</string>
+    <string name="cha">CHA</string>
     <string name="wis">WIS</string>
     <string name="name">Name</string>
     <string name="txtClass">Class</string>
@@ -28,5 +29,8 @@
     <string name="alignment">Alignment</string>
     <string name="race">Race</string>
     <string name="xp">XP</string>
-
+    <string name="atk_bonus">Atk Bonus</string>
+    <string name="damage">Damage</string>
+    <string name="type">Type</string>
+    <string name="spellcasting">Spellcasting</string>
 </resources>

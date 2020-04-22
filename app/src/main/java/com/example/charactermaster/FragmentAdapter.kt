@@ -3,9 +3,7 @@ package com.example.charactermaster
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.charactermaster.Fragments.FragAbilities
-import com.example.charactermaster.Fragments.FragChar
-import com.example.charactermaster.Fragments.FragGeneral
+import com.example.charactermaster.Fragments.*
 
 class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
@@ -14,21 +12,25 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         return when (position) {
             0 -> FragGeneral()
             1 -> FragChar()
-            else -> return FragAbilities()
+            2 -> FragSkills()
+            3 -> FragAttacks()
+            4 -> FragSpells()
+            else -> return FragInventory()
         }
     }
 
     override fun getCount(): Int {
-        return 3
+        return 6
     }
 
     override fun getPageTitle(position: Int): CharSequence {
         return when (position) {
             0 -> "General"
             1 -> "Character"
-            else -> {
-                return "Abilities"
-            }
+            2 -> "Abilities"
+            3 -> "Attacks"
+            4 -> "Spells"
+            else -> return "Inventory"
         }
     }
 }
