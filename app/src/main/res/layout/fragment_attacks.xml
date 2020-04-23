@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Name"
+            android:text="@string/name"
             app:layout_constraintBottom_toTopOf="@+id/guideline12"
             app:layout_constraintEnd_toStartOf="@+id/guideline8"
             app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +93,8 @@
             app:layout_constraintBottom_toTopOf="@+id/editName2"
             app:layout_constraintEnd_toStartOf="@+id/guideline8"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline12" />
+            app:layout_constraintTop_toTopOf="@+id/guideline12"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editBonus1"
@@ -106,7 +107,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/editName1"
             app:layout_constraintEnd_toStartOf="@+id/guideline10"
             app:layout_constraintStart_toStartOf="@+id/guideline8"
-            app:layout_constraintTop_toTopOf="@+id/editName1" />
+            app:layout_constraintTop_toTopOf="@+id/editName1"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editDamage1"
@@ -119,7 +121,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/editBonus1"
             app:layout_constraintEnd_toStartOf="@+id/guideline11"
             app:layout_constraintStart_toStartOf="@+id/guideline10"
-            app:layout_constraintTop_toTopOf="@+id/editBonus1" />
+            app:layout_constraintTop_toTopOf="@+id/editBonus1"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editDamage2"
@@ -132,7 +135,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/editBonus2"
             app:layout_constraintEnd_toStartOf="@+id/guideline11"
             app:layout_constraintStart_toStartOf="@+id/guideline10"
-            app:layout_constraintTop_toTopOf="@+id/editBonus2" />
+            app:layout_constraintTop_toTopOf="@+id/editBonus2"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editDamage3"
@@ -145,7 +149,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/editBonus3"
             app:layout_constraintEnd_toStartOf="@+id/guideline11"
             app:layout_constraintStart_toStartOf="@+id/guideline10"
-            app:layout_constraintTop_toTopOf="@+id/editBonus3" />
+            app:layout_constraintTop_toTopOf="@+id/editBonus3"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editBonus2"
@@ -158,7 +163,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/editName2"
             app:layout_constraintEnd_toStartOf="@+id/guideline10"
             app:layout_constraintStart_toStartOf="@+id/guideline8"
-            app:layout_constraintTop_toTopOf="@+id/editName2" />
+            app:layout_constraintTop_toTopOf="@+id/editName2"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editBonus3"
@@ -171,7 +177,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/editName3"
             app:layout_constraintEnd_toStartOf="@+id/guideline10"
             app:layout_constraintStart_toStartOf="@+id/guideline8"
-            app:layout_constraintTop_toTopOf="@+id/editName3" />
+            app:layout_constraintTop_toTopOf="@+id/editName3"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editName2"
@@ -185,7 +192,8 @@
             app:layout_constraintBottom_toTopOf="@+id/editName3"
             app:layout_constraintEnd_toStartOf="@+id/guideline8"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editName1" />
+            app:layout_constraintTop_toBottomOf="@+id/editName1"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editName3"
@@ -198,7 +206,8 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toStartOf="@+id/guideline8"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editName2" />
+            app:layout_constraintTop_toBottomOf="@+id/editName2"
+            android:importantForAutofill="no" />
 
         <Spinner
             android:id="@+id/spinType1"
@@ -257,7 +266,8 @@
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblSpell" />
+            app:layout_constraintTop_toBottomOf="@+id/lblSpell"
+            android:importantForAutofill="no" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline15"
@@ -288,7 +298,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="AC" />
+                    android:text="@string/ac" />
 
                 <TextView
                     android:id="@+id/lblInit"
@@ -297,7 +307,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Initiative" />
+                    android:text="@string/initiative" />
 
                 <TextView
                     android:id="@+id/lblSpeed"
@@ -306,7 +316,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Speed" />
+                    android:text="@string/speed" />
 
                 <TextView
                     android:id="@+id/lblHP"
@@ -315,7 +325,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="HP" />
+                    android:text="@string/hp" />
             </TableRow>
 
             <TableRow
@@ -330,7 +340,8 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:importantForAutofill="no" />
 
                 <EditText
                     android:id="@+id/editInit"
@@ -340,7 +351,8 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:importantForAutofill="no" />
 
                 <EditText
                     android:id="@+id/editSpeed"
@@ -350,7 +362,8 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:importantForAutofill="no" />
 
                 <EditText
                     android:id="@+id/editHP"
@@ -360,14 +373,14 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:importantForAutofill="no" />
             </TableRow>
 
             <TableRow
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp">
-
                 <TextView
                     android:id="@+id/lblCurrentHP"
                     android:layout_width="wrap_content"
@@ -375,7 +388,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Current HP" />
+                    android:text="@string/current_hp" />
             </TableRow>
 
             <TableRow
@@ -383,23 +396,33 @@
                 android:layout_height="match_parent">
 
 
-                <Button
-                    android:id="@+id/btnDecrease"
+                <EditText
+                    android:id="@+id/editCurrentHP"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Decrease" />
+                    android:ems="10"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:importantForAutofill="no" />
+
 
                 <Button
                     android:id="@+id/btnIncrease"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
                     android:layout_weight="1"
-                    android:text="Increase" />
+                    android:text="@string/increase" />
+
+                <Button
+                    android:id="@+id/btnDecrease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/decrease" />
+
             </TableRow>
 
             <TableRow
@@ -430,7 +453,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Temporary HP" />
+                    android:text="@string/temporary_hp" />
             </TableRow>
 
             <TableRow
@@ -445,25 +468,22 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="number" />
-
-                <Button
-                    android:id="@+id/btnDecreaseTemp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:text="Decrease" />
+                    android:inputType="number"
+                    android:importantForAutofill="no" />
 
                 <Button
                     android:id="@+id/btnIncreaseTemp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Increase" />
+                    android:text="@string/increase" />
+
+                <Button
+                    android:id="@+id/btnDecreaseTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/decrease" />
             </TableRow>
 
             <TableRow
@@ -479,7 +499,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     android:max="100"
-                    android:progress="99" />
+                    android:progress="100" />
             </TableRow>
 
             <TableRow
@@ -494,7 +514,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Hit Dice" />
+                    android:text="@string/hit_dice" />
 
                 <TextView
                     android:id="@+id/lblInspiration"
@@ -503,7 +523,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:text="Inspiration" />
+                    android:text="@string/inspiration" />
             </TableRow>
 
             <TableRow
@@ -516,7 +536,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:importantForAutofill="no" />
 
                 <EditText
                     android:id="@+id/editInspiration"
@@ -526,7 +547,8 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:importantForAutofill="no" />
             </TableRow>
 
         </TableLayout>

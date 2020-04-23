@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Background"
+            android:text="@string/background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -35,14 +35,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblBackground" />
+            app:layout_constraintTop_toBottomOf="@+id/lblBackground"
+            android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/lblAppearance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Appearance"
+            android:text="@string/appearance"
             app:layout_constraintBottom_toTopOf="@+id/txtAppearance"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Traits"
+            android:text="@string/traits"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline13" />
@@ -63,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Ideals"
+            android:text="@string/ideals"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtTraits" />
@@ -73,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Bonds"
+            android:text="@string/bonds"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtIdeals" />
@@ -83,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Flaws"
+            android:text="@string/flaws"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtBonds" />
@@ -102,7 +103,8 @@
             app:layout_constraintBottom_toTopOf="@+id/guideline13"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblAppearance" />
+            app:layout_constraintTop_toBottomOf="@+id/lblAppearance"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/txtTraits"
@@ -116,7 +118,8 @@
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblTraits" />
+            app:layout_constraintTop_toBottomOf="@+id/lblTraits"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/txtIdeals"
@@ -130,7 +133,8 @@
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblIdeals" />
+            app:layout_constraintTop_toBottomOf="@+id/lblIdeals"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/txtBonds"
@@ -144,7 +148,8 @@
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblBonds" />
+            app:layout_constraintTop_toBottomOf="@+id/lblBonds"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/txtFlaws"
@@ -160,7 +165,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblFlaws" />
+            app:layout_constraintTop_toBottomOf="@+id/lblFlaws"
+            android:importantForAutofill="no" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline13"

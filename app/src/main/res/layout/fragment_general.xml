@@ -35,14 +35,15 @@
                     app:layout_constraintBottom_toTopOf="@+id/imgProfile"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:importantForAutofill="no" />
 
                 <TextView
                     android:id="@+id/txtPicture"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="23dp"
-                    android:text="Picture"
+                    android:text="@string/picture"
                     app:layout_constraintBottom_toBottomOf="@+id/imgProfile"
                     app:layout_constraintEnd_toStartOf="@+id/guideline3"
                     app:layout_constraintHorizontal_bias="0.504"
@@ -61,7 +62,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
                     app:layout_constraintTop_toBottomOf="@+id/editName"
-                    app:srcCompat="@drawable/dragonlogo" />
+                    app:srcCompat="@drawable/dragonlogo"
+                    android:contentDescription="@string/character_image" />
 
                 <Button
                     android:id="@+id/btnUpload"
@@ -69,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
-                    android:text="Upload Image"
+                    android:text="@string/upload_image"
                     android:visibility="visible"
                     app:layout_constraintBottom_toTopOf="@+id/spinClass"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -119,7 +121,8 @@
                     app:layout_constraintBottom_toTopOf="@+id/editXP"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
-                    app:layout_constraintTop_toBottomOf="@+id/spinClass" />
+                    app:layout_constraintTop_toBottomOf="@+id/spinClass"
+                    android:importantForAutofill="no" />
 
                 <TextView
                     android:id="@+id/textXP"
@@ -142,7 +145,8 @@
                     app:layout_constraintBottom_toTopOf="@+id/editAlignment"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
-                    app:layout_constraintTop_toBottomOf="@+id/editLevel" />
+                    app:layout_constraintTop_toBottomOf="@+id/editLevel"
+                    android:autofillHints="" />
 
                 <TextView
                     android:id="@+id/txtAlignment"
@@ -165,7 +169,8 @@
                     app:layout_constraintBottom_toTopOf="@+id/editRace"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
-                    app:layout_constraintTop_toBottomOf="@+id/editXP" />
+                    app:layout_constraintTop_toBottomOf="@+id/editXP"
+                    android:importantForAutofill="no" />
 
                 <TextView
                     android:id="@+id/txtRace"
@@ -188,7 +193,8 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
-                    app:layout_constraintTop_toBottomOf="@+id/editAlignment" />
+                    app:layout_constraintTop_toBottomOf="@+id/editAlignment"
+                    android:importantForAutofill="no" />
 
 
 
