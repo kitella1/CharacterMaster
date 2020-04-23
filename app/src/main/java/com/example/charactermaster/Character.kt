@@ -1,53 +1,70 @@
 package com.example.charactermaster
 
 import android.content.Context
-import android.content.Intent
-import android.view.View
-import androidx.core.content.ContextCompat.startActivity
+import android.os.Parcel
+import android.os.Parcelable
+import kotlinx.android.parcel.Parceler
+import kotlinx.android.parcel.Parcelize
 import org.json.JSONException
 import org.json.JSONObject
-import java.io.Serializable
 
+@Parcelize
 data class Character(
-    val charName: String = "",
-    val charRace: String = "",
-    val charClass: String = "",
+    val charName: String? = "",
+    val profileImage: String? = "",
+    val charClass: String? = "",
     val charLevel: Int = 0,
-    val profileImage: String = "") : Serializable {
+    val charXP: Int = 0,
+    val charAlignment: String? = "",
+    val charRace: String? = "",
+    val background: String? = "",
+    val appearance: String? = "",
+    val traits: String? = "",
+    val ideas: String? = "",
+    val bonds: String? = "",
+    val flaws: String? = ""
+) : Parcelable {
+    constructor(parcel: Parcel): this(
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readInt(),
+        parcel.readInt(),
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readString()
+    )
 
-    companion object {
-        fun getCharacters(filename: String, context: Context): ArrayList<Character> {
-            //create ArrayList of Character objects
-            val characterList = ArrayList<Character>()
+    override fun describeContents(): Int {
+        return 0
+    }
 
-            try {
-                //read json file
-                val inputStream = context.assets.open(filename)
-                val buffer = ByteArray(inputStream.available())
-                inputStream.read(buffer)
-                inputStream.close()
-
-                //convert input to JSON
-                val json = JSONObject(String(buffer, Charsets.UTF_8))
-                val characters = json.getJSONArray("characters")
-
-                //extract strings from the JSON objects
-                //create new Character objects and add them to the List
-                for (i in 0 until characters.length()) {
-                    characterList.add(Character(
-                        characters.getJSONObject(i).getString("charName"),
-                        characters.getJSONObject(i).getString("charRace"),
-                        characters.getJSONObject(i).getString("charClass"),
-                        characters.getJSONObject(i).getInt("charLevel"),
-                        characters.getJSONObject(i).getString("profileImage")))
-                }
-
-            } catch (e: JSONException) {
-                e.printStackTrace()
-            }
-
-            //return the List of Character objects
-            return characterList
+    companion object : Parceler<Character> {
+        override fun Character.write(parcel: Parcel, flags: Int) {
+            parcel.writeString(charName)
+            parcel.writeString(profileImage)
+            parcel.writeString(charClass)
+            parcel.writeInt(charLevel)
+            parcel.writeInt(charXP)
+            parcel.writeString(charAlignment)
+            parcel.writeString(charRace)
+            parcel.writeString(background)
+            parcel.writeString(appearance)
+            parcel.writeString(traits)
+            parcel.writeString(ideas)
+            parcel.writeString(bonds)
+            parcel.writeString(flaws)
         }
+        override fun create(parcel: Parcel): Character {
+            return Character(parcel)
+        }
+        /*override fun newArray(size: Int): Array<Character?>? {
+            return arrayOfNulls<Character>(size)
+        }*/
     }
 }

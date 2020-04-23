@@ -2,17 +2,18 @@
   "characters": [
     {
       "charName": "Tanglewood",
-      "charRace": "Wood Elf",
+      "profileImage": "tanglewood",
       "charClass": "Monk",
       "charLevel": 9,
-      "profileImage": "tanglewood"
-    },
-    {
-      "charName": "Grunyar",
-      "charRace": "Dwarf",
-      "charClass": "Paladin",
-      "charLevel": 7,
-      "profileImage": "grunyar"
+      "charXP" : 3600,
+      "charAlignment" : "Neutral Good",
+      "charRace": "Wood Elf",
+      "background" : "When Tanglewood was nothing more than a twinkle in her father’s eye, her nomadic clan became the target of a corrupted forest spirit’s scourge. For many months, the clan was attacked in the twilight hours, wounding many and killing others. When she was born, Tanglewood's infant form was fused with the spirit's in a ritual to rid the clan of its threat. For years, she grew up with Knotroot inside of her. When at last the torment became too much, she was taken to a monastery by her father where she learnt to control the conflict in her heart.",
+            "appearance" : "Tanglewood is a 6ft 4 Tree Nymph. At first glance, she has dark skin and the ashen white hair of her father. Her eyes, though, green like emeralds, belong to her mother. Two pointed ears either side of her head indicate her origins to spying eyes. On the left ear are two rings. Blue robes flow from her broad shoulders down. Ties around her waist hold everything in place.",
+           "traits"  : "Tanglewood is focused and reclusive but once she is fond of someone, she is easily attached.",
+           "ideas" : "Tanglewood believes in gods - but not that they deserve worship. She believes they are as fickle and awful as people and should be treated with no more respect than that which they earn.",
+           "bonds" : "Tanglewood's father passed away not long ago, in his sleep. Her mother remains somewhere in the world, travelling with her nomadic clan. Tanglewood recently aligned with The Heroes of Ravensdale.",
+           "flaws" : "Tanglewood is somewhat self-destructive. With a spirit bent on self-preservation inside of her, she does not often consider the harmful consequences of her actions. Similarly, she does not care for the long life that her race affords her and will often act accordingly."
     }
   ]
 }

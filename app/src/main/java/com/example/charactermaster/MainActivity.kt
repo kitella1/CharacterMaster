@@ -18,7 +18,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun newCharacter (x: View?) {
-        val newCharIntent = Intent(this, CharacterDetails::class.java)
+        val newCharIntent = Intent(this, CharacterDetails::class.java).apply {
+            putExtra("EXTRA_EDIT", true)
+        }
         startActivity(newCharIntent)
     }
 

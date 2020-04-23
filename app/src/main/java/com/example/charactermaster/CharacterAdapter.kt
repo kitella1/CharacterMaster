@@ -29,13 +29,15 @@ class CharacterAdapter(private val context: GrimoireActivity, private val charac
         val resourceId = context.resources.getIdentifier("@drawable/" + characters.get(position).profileImage,"drawable", context.packageName)
         holder.charProfileImage.setImageResource(resourceId)
 
-        holder.itemView.setOnClickListener {
-            val characterIntent: Intent = Intent(context, GrimoireActivity::class.java).apply {
-                putExtra("EXTRA_NAME", characters.get(position).charName)
+        holder.btnDetails.setOnClickListener {
+            val characterIntent: Intent = Intent(context, CharacterDetails::class.java).apply {
+                /*putExtra("EXTRA_NAME", characters.get(position).charName)
                 putExtra("EXTRA_RACE", characters.get(position).charRace)
                 putExtra("EXTRA_CLASS", characters.get(position).charClass)
                 putExtra("EXTRA_LVL", characters.get(position).charLevel)
-                putExtra("EXTRA_IMG", resourceId)
+                putExtra("EXTRA_IMG", resourceId)*/
+                putExtra("EXTRA_CHAR", characters[position])
+                putExtra("EXTRA_EDIT", false)
             }
             startActivity(context, characterIntent, null)
         }
@@ -47,5 +49,6 @@ class CharacterAdapter(private val context: GrimoireActivity, private val charac
         val charClass = view.txtClass
         val charLevel = view.txtLevel
         val charProfileImage = view.imgProfileImage
+        val btnDetails = view.btnDetails
     }
 }
