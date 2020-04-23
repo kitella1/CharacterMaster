@@ -41,8 +41,6 @@
     <string name="increase">Increase</string>
     <string name="decrease">Decrease</string>
     <string name="temporary_hp">Temporary HP</string>
-    <string name="increase">Increase</string>
-    <string name="decrease">Decrease</string>
     <string name="hit_dice">Hit Dice</string>
     <string name="inspiration">Inspiration</string>
     <string name="background">Background</string>
@@ -53,10 +51,7 @@
     <string name="traits">Traits</string>
     <string name="picture">Picture</string>
     <string name="upload_image">Upload Image</string>
-    <string name="character_image">Character image</string>
     <string name="proficiency">Proficiency</string>
-    <string name="skills">Skills</string>
-    <string name="modifier">Modifier</string>
     <string name="acrobatics_dex">Acrobatics (Dex)</string>
     <string name="animal_handling_wis">Animal Handling (Wis)</string>
     <string name="arcana_int">Arcana (Int)</string>

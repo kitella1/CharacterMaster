@@ -12,7 +12,7 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         return when (position) {
             0 -> FragGeneral()
             1 -> FragChar()
-            2 -> FragSkills()
+            2 -> FragAbilities()
             3 -> FragAttacks()
             4 -> FragSpells()
             else -> return FragInventory()

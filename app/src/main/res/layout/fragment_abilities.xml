@@ -14,220 +14,256 @@
 
         <EditText
             android:id="@+id/savThrowInt"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/savThrowWis"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/savThrowCon"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/savThrowCon" />
 
         <EditText
             android:id="@+id/savThrowWis"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/savThrowCha"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/savThrowInt"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/savThrowInt" />
 
         <EditText
             android:id="@+id/savThrowCha"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/horiGuideline2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/savThrowWis"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/savThrowWis" />
 
         <EditText
             android:id="@+id/savThrowCon"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/savThrowInt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/savThrowDex"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/savThrowDex" />
 
         <EditText
             android:id="@+id/savThrowDex"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/savThrowCon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/savThrowStr"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/savThrowStr" />
 
         <EditText
             android:id="@+id/savThrowStr"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/savThrowDex"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toTopOf="@+id/guideline"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <EditText
             android:id="@+id/abilityModStr"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/abilityModDex"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
-            app:layout_constraintTop_toTopOf="@+id/guideline"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <EditText
             android:id="@+id/abilityModDex"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/abilityModCon"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
-            app:layout_constraintTop_toBottomOf="@+id/abilityModStr"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/abilityModStr" />
 
         <EditText
             android:id="@+id/abilityModCon"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/abilityModInt"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
-            app:layout_constraintTop_toBottomOf="@+id/abilityModDex"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/abilityModDex" />
 
         <EditText
             android:id="@+id/abilityModInt"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/abilityModWis"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
-            app:layout_constraintTop_toBottomOf="@+id/abilityModCon"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/abilityModCon" />
 
         <EditText
             android:id="@+id/abilityModWis"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/abilityModCha"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
-            app:layout_constraintTop_toBottomOf="@+id/abilityModInt"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/abilityModInt" />
 
         <EditText
             android:id="@+id/abilityModCha"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/horiGuideline2"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
-            app:layout_constraintTop_toBottomOf="@+id/abilityModWis"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/abilityModWis" />
 
         <EditText
             android:id="@+id/abilityScoreStr"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/abilityScoreDex"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toTopOf="@+id/guideline"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <EditText
             android:id="@+id/abilityScoreDex"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/abilityScoreCon"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toBottomOf="@+id/abilityScoreStr"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/abilityScoreStr" />
 
         <EditText
             android:id="@+id/abilityScoreCon"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/abilityScoreInt"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toBottomOf="@+id/abilityScoreDex"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/abilityScoreDex" />
 
         <EditText
             android:id="@+id/abilityScoreInt"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/abilityScoreWis"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toBottomOf="@+id/abilityScoreCon"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/abilityScoreCon" />
 
 
         <EditText
             android:id="@+id/abilityScoreWis"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/abilityScoreCha"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toBottomOf="@+id/abilityScoreInt"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/abilityScoreInt" />
 
         <EditText
             android:id="@+id/abilityScoreCha"
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/horiGuideline2"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toBottomOf="@+id/abilityScoreWis"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/abilityScoreWis" />
 
 
         <TextView
@@ -447,14 +483,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="91dp" />
+            app:layout_constraintGuide_percent="0.25" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/vertGuideline2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="306dp" />
+            app:layout_constraintGuide_percent="0.75" />
 
         <TextView
             android:id="@+id/lblProficient"
@@ -932,7 +968,6 @@
             android:ems="10"
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.526"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
             app:layout_constraintTop_toBottomOf="@+id/modSleight"
             android:importantForAutofill="no" />
@@ -963,7 +998,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="205dp" />
+            app:layout_constraintGuide_percent="0.5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
