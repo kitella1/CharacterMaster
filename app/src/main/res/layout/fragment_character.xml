@@ -23,20 +23,18 @@
         <EditText
             android:id="@+id/txtBackground"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
             android:ems="10"
             android:gravity="start|top"
+            android:importantForAutofill="no"
             android:inputType="textMultiLine"
-            app:layout_constraintBottom_toTopOf="@+id/lblAppearance"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblBackground"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/lblBackground" />
 
         <TextView
             android:id="@+id/lblAppearance"
@@ -44,7 +42,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/appearance"
-            app:layout_constraintBottom_toTopOf="@+id/txtAppearance"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtBackground" />
@@ -57,7 +54,7 @@
             android:text="@string/traits"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline13" />
+            app:layout_constraintTop_toBottomOf="@+id/txtAppearance" />
 
         <TextView
             android:id="@+id/lblIdeals"
@@ -92,88 +89,77 @@
         <EditText
             android:id="@+id/txtAppearance"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
             android:ems="10"
             android:gravity="start|top"
+            android:importantForAutofill="no"
             android:inputType="textMultiLine"
-            app:layout_constraintBottom_toTopOf="@+id/guideline13"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblAppearance"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/lblAppearance" />
 
         <EditText
             android:id="@+id/txtTraits"
             android:layout_width="0dp"
-            android:layout_height="77dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
             android:gravity="start|top"
+            android:importantForAutofill="no"
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblTraits"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/lblTraits" />
 
         <EditText
             android:id="@+id/txtIdeals"
             android:layout_width="0dp"
-            android:layout_height="77dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
             android:gravity="start|top"
+            android:importantForAutofill="no"
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblIdeals"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/lblIdeals" />
 
         <EditText
             android:id="@+id/txtBonds"
             android:layout_width="0dp"
-            android:layout_height="77dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
             android:gravity="start|top"
+            android:importantForAutofill="no"
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblBonds"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/lblBonds" />
 
         <EditText
             android:id="@+id/txtFlaws"
             android:layout_width="0dp"
-            android:layout_height="77dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
             android:ems="10"
             android:gravity="start|top"
+            android:importantForAutofill="no"
             android:inputType="textMultiLine"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lblFlaws"
-            android:importantForAutofill="no" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="438dp" />
+            app:layout_constraintTop_toBottomOf="@+id/lblFlaws" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
