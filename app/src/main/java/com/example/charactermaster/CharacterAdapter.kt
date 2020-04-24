@@ -31,11 +31,6 @@ class CharacterAdapter(private val context: GrimoireActivity, private val charac
 
         holder.btnDetails.setOnClickListener {
             val characterIntent: Intent = Intent(context, CharacterDetails::class.java).apply {
-                /*putExtra("EXTRA_NAME", characters.get(position).charName)
-                putExtra("EXTRA_RACE", characters.get(position).charRace)
-                putExtra("EXTRA_CLASS", characters.get(position).charClass)
-                putExtra("EXTRA_LVL", characters.get(position).charLevel)
-                putExtra("EXTRA_IMG", resourceId)*/
                 putExtra("EXTRA_CHAR", characters[position])
                 putExtra("EXTRA_EDIT", false)
             }

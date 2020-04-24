@@ -7,12 +7,14 @@
     android:fillViewport="true"
     tools:layout_editor_absoluteX="1dp"
     tools:layout_editor_absoluteY="1dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".Fragments.FragGeneral">
+            tools:context=".Fragments.FragGeneral"
+           >
 
                 <TextView
                     android:id="@+id/txtName"
@@ -31,12 +33,13 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:ems="10"
+                    android:importantForAutofill="no"
                     android:inputType="textPersonName"
                     app:layout_constraintBottom_toTopOf="@+id/imgProfile"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:importantForAutofill="no" />
+                    android:text=""/>
 
                 <TextView
                     android:id="@+id/txtPicture"
@@ -56,7 +59,7 @@
                     android:layout_height="205dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
-                    android:src="@drawable/grunyar"
+                    android:src="@drawable/dragonlogo"
                     app:layout_constraintBottom_toTopOf="@+id/btnUpload"
                     app:layout_constraintDimensionRatio="h,1:1"
                     app:layout_constraintEnd_toEndOf="parent"
