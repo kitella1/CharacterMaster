@@ -16,23 +16,67 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment
     {
+        var frag: Fragment? = null
         return when (position) {
             0 -> {
-                val fragGen = FragGeneral()
+                frag = FragGeneral()
                 val bundle = Bundle()
                 if (character != null) {
                     bundle.putParcelable("character", character)
-                    fragGen.arguments = bundle
-                    /*fragGen.arguments?.putBundle("character", bundle)*/
+                    frag.arguments = bundle
                 }
-                return fragGen
+                return frag
 
             }
-            1 -> FragChar()
-            2 -> FragAbilities()
-            3 -> FragAttacks()
-            4 -> FragSpells()
-            else -> return FragInventory()
+            1 -> {
+                frag = FragChar()
+                val bundle = Bundle()
+                if (character != null) {
+                    bundle.putParcelable("character", character)
+                    frag.arguments = bundle
+                }
+                return frag
+
+            }
+            2 -> {
+                frag = FragAbilities()
+                val bundle = Bundle()
+                if (character != null) {
+                    bundle.putParcelable("character", character)
+                    frag.arguments = bundle
+                }
+                return frag
+            }
+            3 -> {
+                frag = FragAttacks()
+                val bundle = Bundle()
+                if (character != null) {
+                    bundle.putParcelable("character", character)
+                    frag.arguments = bundle
+                }
+                return frag
+
+            }
+            4 -> {
+                frag = FragSpells()
+                val bundle = Bundle()
+                if (character != null) {
+                    bundle.putParcelable("character", character)
+                    frag.arguments = bundle
+                }
+                return frag
+
+            }
+            else -> {
+                frag = FragInventory()
+                val bundle = Bundle()
+                if (character != null) {
+                    bundle.putParcelable("character", character)
+                    frag.arguments = bundle
+                }
+                return frag
+
+            }
         }
     }
 

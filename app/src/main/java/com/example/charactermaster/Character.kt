@@ -20,7 +20,7 @@ data class Character(
     val background: String? = "",
     val appearance: String? = "",
     val traits: String? = "",
-    val ideas: String? = "",
+    val ideals: String? = "",
     val bonds: String? = "",
     val flaws: String? = ""
 ) : Parcelable {
@@ -56,7 +56,7 @@ data class Character(
             parcel.writeString(background)
             parcel.writeString(appearance)
             parcel.writeString(traits)
-            parcel.writeString(ideas)
+            parcel.writeString(ideals)
             parcel.writeString(bonds)
             parcel.writeString(flaws)
         }
