@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FRAGMENT_GENERAL"
     android:layout_width="409dp"
     android:layout_height="729dp"
-    xmlns:tools="http://schemas.android.com/tools"
     android:fillViewport="true"
     tools:layout_editor_absoluteX="1dp"
-    tools:layout_editor_absoluteY="1dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    >
+    tools:layout_editor_absoluteY="1dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".Fragments.FragGeneral"
-           >
+            tools:context=".Fragments.FragGeneral">
 
                 <TextView
                     android:id="@+id/txtName"
@@ -35,11 +34,11 @@
                     android:ems="10"
                     android:importantForAutofill="no"
                     android:inputType="textPersonName"
+                    android:text=""
                     app:layout_constraintBottom_toTopOf="@+id/imgProfile"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:text=""/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/txtPicture"
@@ -59,14 +58,14 @@
                     android:layout_height="205dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
+                    android:contentDescription="@string/character_image"
                     android:src="@drawable/dragonlogo"
                     app:layout_constraintBottom_toTopOf="@+id/btnUpload"
                     app:layout_constraintDimensionRatio="h,1:1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
                     app:layout_constraintTop_toBottomOf="@+id/editName"
-                    app:srcCompat="@drawable/dragonlogo"
-                    android:contentDescription="@string/character_image" />
+                    app:srcCompat="@drawable/dragonlogo" />
 
                 <Button
                     android:id="@+id/btnUpload"
@@ -120,12 +119,12 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:ems="10"
+                    android:importantForAutofill="no"
                     android:inputType="number"
                     app:layout_constraintBottom_toTopOf="@+id/editXP"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
-                    app:layout_constraintTop_toBottomOf="@+id/spinClass"
-                    android:importantForAutofill="no" />
+                    app:layout_constraintTop_toBottomOf="@+id/spinClass" />
 
                 <TextView
                     android:id="@+id/textXP"
@@ -143,13 +142,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
+                    android:autofillHints=""
                     android:ems="10"
                     android:inputType="number"
                     app:layout_constraintBottom_toTopOf="@+id/editAlignment"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
-                    app:layout_constraintTop_toBottomOf="@+id/editLevel"
-                    android:autofillHints="" />
+                    app:layout_constraintTop_toBottomOf="@+id/editLevel" />
 
                 <TextView
                     android:id="@+id/txtAlignment"
@@ -168,12 +167,12 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:ems="10"
+                    android:importantForAutofill="no"
                     android:inputType="textPersonName"
                     app:layout_constraintBottom_toTopOf="@+id/editRace"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
-                    app:layout_constraintTop_toBottomOf="@+id/editXP"
-                    android:importantForAutofill="no" />
+                    app:layout_constraintTop_toBottomOf="@+id/editXP" />
 
                 <TextView
                     android:id="@+id/txtRace"
@@ -192,13 +191,12 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:ems="10"
+                    android:importantForAutofill="no"
                     android:inputType="textPersonName"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
-                    app:layout_constraintTop_toBottomOf="@+id/editAlignment"
-                    android:importantForAutofill="no" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/editAlignment" />
 
 
                 <androidx.constraintlayout.widget.Guideline
