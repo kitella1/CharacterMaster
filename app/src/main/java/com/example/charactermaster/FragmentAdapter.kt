@@ -9,11 +9,9 @@ import com.example.charactermaster.Fragments.*
 
 class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     var character: Character? = null
-    var editable: Boolean = false
 
-    fun putAttrs(char : Character?, edit : Boolean) {
+    fun putAttrs(char : Character?) {
         character = char
-        editable = edit
     }
 
     override fun getItem(position: Int): Fragment
@@ -25,7 +23,6 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
                 val bundle = Bundle()
                 if (character != null) {
                     bundle.putParcelable("character", character)
-                    bundle.putBoolean("editable", editable)
                     frag.arguments = bundle
                 }
                 return frag
@@ -36,7 +33,6 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
                 val bundle = Bundle()
                 if (character != null) {
                     bundle.putParcelable("character", character)
-                    bundle.putBoolean("editable", editable)
                     frag.arguments = bundle
                 }
                 return frag
@@ -46,7 +42,6 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
                 val bundle = Bundle()
                 if (character != null) {
                     bundle.putParcelable("character", character)
-                    bundle.putBoolean("editable", editable)
                     frag.arguments = bundle
                 }
                 return frag
@@ -56,7 +51,6 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
                 val bundle = Bundle()
                 if (character != null) {
                     bundle.putParcelable("character", character)
-                    bundle.putBoolean("editable", editable)
                     frag.arguments = bundle
                 }
                 return frag
@@ -67,7 +61,6 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
                 val bundle = Bundle()
                 if (character != null) {
                     bundle.putParcelable("character", character)
-                    bundle.putBoolean("editable", editable)
                     frag.arguments = bundle
                 }
                 return frag
@@ -78,7 +71,6 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
                 val bundle = Bundle()
                 if (character != null) {
                     bundle.putParcelable("character", character)
-                    bundle.putBoolean("editable", editable)
                     frag.arguments = bundle
                 }
                 return frag

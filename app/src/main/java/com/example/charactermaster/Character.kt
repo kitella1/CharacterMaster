@@ -1,22 +1,19 @@
 package com.example.charactermaster
 
-import android.content.Context
 import android.os.Parcel
 import android.os.Parcelable
 import kotlinx.android.parcel.Parceler
 import kotlinx.android.parcel.Parcelize
-import org.json.JSONException
-import org.json.JSONObject
 
 @Parcelize
 data class Character(
-    val charName: String? = "",
+    var charName: String? = "",
     val profileImage: String? = "",
     val charClass: String? = "",
-    val charLevel: Int = 0,
-    val charXP: Int = 0,
-    val charAlignment: String? = "",
-    val charRace: String? = "",
+    var charLevel: Int = 0,
+    var charXP: Int = 0,
+    var charAlignment: String? = "",
+    var charRace: String? = "",
     val background: String? = "",
     val appearance: String? = "",
     val traits: String? = "",
@@ -63,8 +60,5 @@ data class Character(
         override fun create(parcel: Parcel): Character {
             return Character(parcel)
         }
-        /*override fun newArray(size: Int): Array<Character?>? {
-            return arrayOfNulls<Character>(size)
-        }*/
     }
 }

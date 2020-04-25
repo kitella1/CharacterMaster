@@ -1,62 +1,40 @@
 package com.example.charactermaster
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentTransaction
-import com.example.charactermaster.Fragments.FragGeneral
 import kotlinx.android.synthetic.main.activity_character_details.*
+import kotlinx.android.synthetic.main.fragment_character.*
+import kotlinx.android.synthetic.main.fragment_general.*
 
 class CharacterDetails : AppCompatActivity() {
     var editable: Boolean = false
     var character: Character? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_details)
 
+        character = intent.getParcelableExtra<Character>("EXTRA_CHAR")
+
         val fragmentAdapter = FragmentAdapter(supportFragmentManager)
-        fragmentAdapter.putAttrs(intent.getParcelableExtra<Character>("EXTRA_CHAR"), editable)
+        fragmentAdapter.putAttrs(character)
         viewPager?.adapter = fragmentAdapter
         tabs.setupWithViewPager(viewPager)
 
-        editable = intent.getBooleanExtra("EXTRA_EDIT", false)
 
-        editToggle()
     }
 
-    fun fabEditButton(view : View?) {
-        var frag: FragGeneral = FragGeneral()
-        supportFragmentManager.beginTransaction().remove(frag).commit()
-    /*if(editable)
-        {
-            frag.setEditState(false)
-            //redraw fragments with new editable field
+    fun fabSave(view : View?) {
+        val char = Character(editName.text.toString(), "", "", Integer.parseInt(editLevel.text.toString()), Integer.parseInt(editXP.text.toString()), editAlignment.text.toString(), editRace.text.toString(), txtBackground.text.toString(), txtAppearance.text.toString(), txtTraits.text.toString(), txtIdeals.text.toString(), txtBonds.text.toString(), txtFlaws.text.toString())
+        val storage: Storage = Storage(this, char?.charName!!)
+        storage.saveCharacter(char!!)
 
-            //make all fields non-editable
-            //save data to local JSON file
-                //check if character already exists
-                    //if yes, overwrite
-                    //if no, add to 'characters' array
-        }
-        else {
-            //make all fields editable
-        }*/
-        editToggle()
-    }
-
-    fun editToggle () {
-        if (editable)
-        {
-            fab.setImageResource(R.drawable.ic_save)
-        }
-        else
-        {
-            fab.setImageResource(R.drawable.ic_edit)
-
-        }
-        editable = !editable
+        Toast.makeText(this, "Saved!", Toast.LENGTH_SHORT).show()
     }
 }
-
-/*pass editable at same place as character, update and redraw on fab click*/

@@ -13,7 +13,6 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="96dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
         android:contentDescription="@string/imgLogo"
         app:layout_constraintBottom_toTopOf="@+id/imgTitle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,44 +25,29 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:gravity="center_horizontal"
         android:maxLines="1"
         android:text="@string/appName"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toTopOf="@+id/imgNewCharacter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
-
-    <Button
-        android:id="@+id/imgNewCharacter"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:onClick="newCharacter"
-        android:text="@string/createCharacter"
-        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/imgViewGrimoire"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
 
     <Button
         android:id="@+id/imgViewGrimoire"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="96dp"
         android:onClick="viewGrimoire"
         android:text="@string/viewGrimoire"
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgNewCharacter" />
+        app:layout_constraintTop_toBottomOf="@+id/imgTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>

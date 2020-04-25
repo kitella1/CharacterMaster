@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/appBarTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -51,11 +51,11 @@
     </androidx.viewpager.widget.ViewPager>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fabAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:onClick="fabEditButton"
-        app:srcCompat="@drawable/ic_edit" />
+        android:onClick="fabSave"
+        app:srcCompat="@drawable/ic_save" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

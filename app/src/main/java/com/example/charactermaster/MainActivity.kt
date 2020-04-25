@@ -16,15 +16,5 @@ class MainActivity : AppCompatActivity() {
         val grimIntent = Intent(this, GrimoireActivity::class.java)
         startActivity(grimIntent)
     }
-
-    fun newCharacter (x: View?) {
-        val newCharIntent = Intent(this, CharacterDetails::class.java).apply {
-            putExtra("EXTRA_EDIT", true)
-        }
-        startActivity(newCharIntent)
-    }
-
-
-
 }
 

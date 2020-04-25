@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.content_grimoire.*
 import org.json.JSONException
@@ -65,5 +66,10 @@ class GrimoireActivity : AppCompatActivity() {
 
         //return the List of Character objects
         return characterList
+    }
+
+    fun fabAddCharacter(view: View) {
+        val newCharIntent = Intent(this, CharacterDetails::class.java)
+        startActivity(newCharIntent)
     }
 }
