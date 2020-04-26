@@ -49,7 +49,6 @@ class FragGeneral : Fragment() {
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show()
         }
-
     }
 
     override fun onCreateView(inflater: LayoutInflater,
@@ -101,7 +100,9 @@ class FragGeneral : Fragment() {
                 classArray.add(it.name)
             }
 
-            spinClass.adapter = ArrayAdapter(activity!!.applicationContext, R.layout.support_simple_spinner_dropdown_item, classArray)
+            val a = ArrayAdapter(activity!!.applicationContext, android.R.layout.simple_spinner_item, classArray)
+            a.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            spinClass.adapter = a
         }
     }
 

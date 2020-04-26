@@ -23,7 +23,7 @@ class Storage(val context: Context, val prefName: String = "") {
         val charEdit: SharedPreferences.Editor = charPrefs.edit()
         charEdit.putString("name", char.name)
         charEdit.putString("image", "jester")
-        /*editor.putString("charClass", char.charClass)*/
+        charEdit.putString("charClass", char.charClass)
         charEdit.putInt("level", char.level)
         charEdit.putInt("xp", char.xp)
         charEdit.putString("alignment", char.alignment)
@@ -46,7 +46,7 @@ class Storage(val context: Context, val prefName: String = "") {
             val c = Character(
                 charPrefs.getString("name", ""),
                 "",
-                "",
+                charPrefs.getString("charClass", ""),
                 charPrefs.getInt("level", 1),
                 charPrefs.getInt("xp", 0),
                 charPrefs.getString("alignment", ""),

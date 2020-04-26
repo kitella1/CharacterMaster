@@ -27,7 +27,7 @@ class CharacterDetails : AppCompatActivity() {
     }
 
     fun fabSave(view : View?) {
-        val char = Character(editName.text.toString(), "", "", Integer.parseInt(editLevel.text.toString()), Integer.parseInt(editXP.text.toString()), editAlignment.text.toString(), editRace.text.toString(), txtBackground.text.toString(), txtAppearance.text.toString(), txtTraits.text.toString(), txtIdeals.text.toString(), txtBonds.text.toString(), txtFlaws.text.toString())
+        val char = Character(editName.text.toString(), "", spinClass.selectedItem.toString(), Integer.parseInt(editLevel.text.toString()), Integer.parseInt(editXP.text.toString()), editAlignment.text.toString(), editRace.text.toString(), txtBackground.text.toString(), txtAppearance.text.toString(), txtTraits.text.toString(), txtIdeals.text.toString(), txtBonds.text.toString(), txtFlaws.text.toString())
         val storage: Storage = Storage(this, char.name!!)
         storage.saveCharacter(char)
 
