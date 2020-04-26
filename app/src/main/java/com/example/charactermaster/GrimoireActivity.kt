@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import kotlinx.android.synthetic.main.content_grimoire.*
 import org.json.JSONException
 import org.json.JSONObject
@@ -17,15 +18,27 @@ class GrimoireActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_grimoire)
 
-        val characterList = getCharacters("characters.json", this)
+        val storage = Storage(this)
+        val chars = storage.loadCharacters()
 
         //link to recycler view
-        recyclerView.adapter = CharacterAdapter(this, characterList).apply {
+        recyclerView.adapter = CharacterAdapter(this, chars).apply {
             recyclerView.layoutManager = LinearLayoutManager(applicationContext)
+        }
+
+        val refresher: SwipeRefreshLayout = pullToRefresh
+        refresher.setOnRefreshListener {
+            val storage = Storage(this)
+            val chars = storage.loadCharacters()
+            recyclerView.adapter = CharacterAdapter(this, chars).apply {
+                recyclerView.layoutManager = LinearLayoutManager(applicationContext)
+            }
+            (recyclerView.adapter as CharacterAdapter).notifyDataSetChanged()
+            pullToRefresh.isRefreshing = false
         }
     }
 
-    fun getCharacters(filename: String, context: Context): ArrayList<Character> {
+    /*fun getCharacters(filename: String, context: Context): ArrayList<Character> {
         //create ArrayList of Character objects
         val characterList = ArrayList<Character>()
 
@@ -66,7 +79,7 @@ class GrimoireActivity : AppCompatActivity() {
 
         //return the List of Character objects
         return characterList
-    }
+    }*/
 
     fun fabAddCharacter(view: View) {
         val newCharIntent = Intent(this, CharacterDetails::class.java)

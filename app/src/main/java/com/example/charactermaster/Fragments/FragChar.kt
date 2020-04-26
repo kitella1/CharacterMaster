@@ -34,7 +34,7 @@ class FragChar : Fragment() {
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val v = inflater!!.inflate(R.layout.fragment_character, container, false)
+        val v = inflater.inflate(R.layout.fragment_character, container, false)
         if (character != null) {
             v.txtBackground.setText(character?.background)
             v.txtAppearance.setText(character?.appearance)

@@ -16,8 +16,8 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment
     {
-        var frag: Fragment? = null
-        return when (position) {
+        var frag: Fragment?
+        when (position) {
             0 -> {
                 frag = FragGeneral()
                 val bundle = Bundle()

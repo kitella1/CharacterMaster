@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun viewGrimoire (x: View?) {
+    fun viewGrimoire (view: View?) {
         val grimIntent = Intent(this, GrimoireActivity::class.java)
         startActivity(grimIntent)
     }

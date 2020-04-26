@@ -1,5 +1,6 @@
 package com.example.charactermaster.Fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -20,21 +21,16 @@ import com.example.charactermaster.R
 import kotlinx.android.synthetic.main.fragment_general.*
 import kotlinx.android.synthetic.main.fragment_general.view.*
 import kotlinx.android.synthetic.main.fragment_general.view.spinClass
+import kotlinx.android.synthetic.main.list_view_character.view.*
 
 
 private const val CHARACTER = "character"
 
-class FragGeneral : Fragment(), TextWatcher {
+class FragGeneral : Fragment() {
     private var character: Character? = null
     private var viewGroup: ViewGroup? = null
     private var editable: Boolean = true
     lateinit var v: View
-
-    private var editName: EditText? = null
-    private val editLevel: EditText? = null
-    private val editXP: EditText? = null
-    private val editRace: EditText? = null
-    private val editAlignment: EditText? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,63 +45,24 @@ class FragGeneral : Fragment(), TextWatcher {
         viewGroup = container
         v = inflater.inflate(R.layout.fragment_general, viewGroup, false)
 
-        /*v.editName.addTextChangedListener(this)
-        v.editAlignment.addTextChangedListener(this)
-        v.editLevel.addTextChangedListener(this)
-        v.editXP.addTextChangedListener(this)
-        v.editRace.addTextChangedListener(this)*/
-
         if (character != null) {
-            v.editName.setText(character?.charName)
-            v.editAlignment.setText(character?.charAlignment)
-            v.editLevel.setText(character?.charLevel.toString())
-            v.editXP.setText(character?.charXP.toString())
-            v.editRace.setText(character?.charRace)
+            v.editName.setText(character?.name)
+            v.imgProfile.setImageResource(resources.getIdentifier("@drawable/" + character!!.image,
+                "drawable",
+                context?.packageName
+            ))
+            v.editAlignment.setText(character?.alignment)
+            v.editLevel.setText(character?.level.toString())
+            v.editXP.setText(character?.xp.toString())
+            v.editRace.setText(character?.race)
         }
 
         return v
     }
 
-    fun setCharacterGeneral(): Map<String, Editable> {
-        return mapOf("charName" to v.editName.text, "charAlignment" to v.editAlignment.text, "charLevel" to v.editLevel.text, "charXP" to v.editXP.text, "charRace" to v.editRace.text)
-    }
 
     companion object {
         fun newInstance(): FragGeneral =
             FragGeneral()
-    }
-
-    override fun afterTextChanged(s: Editable?) {
-            /*when (s) {
-                R.id.editName -> {
-                    *//*(activity as CharacterDetails).updateCharacter("charName", editName?.text.toString())*//*
-                    Toast.makeText(this.context, "Edit Name", Toast.LENGTH_SHORT).show()
-                }
-                R.id.editAlignment -> {
-
-                    Toast.makeText(this.context, "Edit Alignment", Toast.LENGTH_SHORT).show()
-                }
-                R.id.editLevel -> {
-                    *//*(activity as CharacterDetails).updateCharacter("charLevel", Integer.parseInt(editLevel?.text.toString()))*//*
-                    Toast.makeText(this.context, "Edit Level", Toast.LENGTH_SHORT).show()
-                }
-                R.id.editRace -> {
-                    *//*(activity as CharacterDetails).updateCharacter("editRace", editName?.text.toString())*//*
-                }
-                R.id.editXP -> {
-                    Toast.makeText(this.context, "Edit XP", Toast.LENGTH_SHORT).show()
-                }
-                else -> {
-                    Toast.makeText(this.context, "Other", Toast.LENGTH_SHORT).show()
-                }
-            }*/
-        }
-
-    override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-
-    }
-
-    override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-
     }
 }

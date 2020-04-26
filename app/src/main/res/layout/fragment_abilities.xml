@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/savThrowInt"
+            android:id="@+id/editSavInt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -21,13 +21,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/savThrowWis"
+            app:layout_constraintBottom_toTopOf="@+id/editSavWis"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/savThrowCon" />
+            app:layout_constraintTop_toBottomOf="@+id/editSavCon" />
 
         <EditText
-            android:id="@+id/savThrowWis"
+            android:id="@+id/editSavWis"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -35,13 +35,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/savThrowCha"
+            app:layout_constraintBottom_toTopOf="@+id/editSavCha"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/savThrowInt" />
+            app:layout_constraintTop_toBottomOf="@+id/editSavInt" />
 
         <EditText
-            android:id="@+id/savThrowCha"
+            android:id="@+id/editSavCha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -52,10 +52,10 @@
             app:layout_constraintBottom_toTopOf="@+id/horiGuideline2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/savThrowWis" />
+            app:layout_constraintTop_toBottomOf="@+id/editSavWis" />
 
         <EditText
-            android:id="@+id/savThrowCon"
+            android:id="@+id/editSavCon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -63,13 +63,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/savThrowInt"
+            app:layout_constraintBottom_toTopOf="@+id/editSavInt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/savThrowDex" />
+            app:layout_constraintTop_toBottomOf="@+id/editSavDex" />
 
         <EditText
-            android:id="@+id/savThrowDex"
+            android:id="@+id/editSavDex"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -77,13 +77,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/savThrowCon"
+            app:layout_constraintBottom_toTopOf="@+id/editSavCon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/savThrowStr" />
+            app:layout_constraintTop_toBottomOf="@+id/editSavStr" />
 
         <EditText
-            android:id="@+id/savThrowStr"
+            android:id="@+id/editSavStr"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -91,13 +91,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/savThrowDex"
+            app:layout_constraintBottom_toTopOf="@+id/editSavDex"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
             app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <EditText
-            android:id="@+id/abilityModStr"
+            android:id="@+id/editModStr"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -105,13 +105,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/abilityModDex"
+            app:layout_constraintBottom_toTopOf="@+id/editModDex"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
             app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <EditText
-            android:id="@+id/abilityModDex"
+            android:id="@+id/editModDex"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -119,13 +119,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/abilityModCon"
+            app:layout_constraintBottom_toTopOf="@+id/editModCon"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
-            app:layout_constraintTop_toBottomOf="@+id/abilityModStr" />
+            app:layout_constraintTop_toBottomOf="@+id/editModStr" />
 
         <EditText
-            android:id="@+id/abilityModCon"
+            android:id="@+id/editModCon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -133,13 +133,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/abilityModInt"
+            app:layout_constraintBottom_toTopOf="@+id/editModInt"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
-            app:layout_constraintTop_toBottomOf="@+id/abilityModDex" />
+            app:layout_constraintTop_toBottomOf="@+id/editModDex" />
 
         <EditText
-            android:id="@+id/abilityModInt"
+            android:id="@+id/editModInt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -147,13 +147,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/abilityModWis"
+            app:layout_constraintBottom_toTopOf="@+id/editModWis"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
-            app:layout_constraintTop_toBottomOf="@+id/abilityModCon" />
+            app:layout_constraintTop_toBottomOf="@+id/editModCon" />
 
         <EditText
-            android:id="@+id/abilityModWis"
+            android:id="@+id/editModWis"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -161,13 +161,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/abilityModCha"
+            app:layout_constraintBottom_toTopOf="@+id/editModCha"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
-            app:layout_constraintTop_toBottomOf="@+id/abilityModInt" />
+            app:layout_constraintTop_toBottomOf="@+id/editModInt" />
 
         <EditText
-            android:id="@+id/abilityModCha"
+            android:id="@+id/editModCha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -178,10 +178,10 @@
             app:layout_constraintBottom_toTopOf="@+id/horiGuideline2"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline14"
-            app:layout_constraintTop_toBottomOf="@+id/abilityModWis" />
+            app:layout_constraintTop_toBottomOf="@+id/editModWis" />
 
         <EditText
-            android:id="@+id/abilityScoreStr"
+            android:id="@+id/editScoreStr"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -189,13 +189,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/abilityScoreDex"
+            app:layout_constraintBottom_toTopOf="@+id/editScoreDex"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
             app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <EditText
-            android:id="@+id/abilityScoreDex"
+            android:id="@+id/editScoreDex"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -203,13 +203,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/abilityScoreCon"
+            app:layout_constraintBottom_toTopOf="@+id/editScoreCon"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toBottomOf="@+id/abilityScoreStr" />
+            app:layout_constraintTop_toBottomOf="@+id/editScoreStr" />
 
         <EditText
-            android:id="@+id/abilityScoreCon"
+            android:id="@+id/editScoreCon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -217,13 +217,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/abilityScoreInt"
+            app:layout_constraintBottom_toTopOf="@+id/editScoreInt"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toBottomOf="@+id/abilityScoreDex" />
+            app:layout_constraintTop_toBottomOf="@+id/editScoreDex" />
 
         <EditText
-            android:id="@+id/abilityScoreInt"
+            android:id="@+id/editScoreInt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -231,14 +231,14 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/abilityScoreWis"
+            app:layout_constraintBottom_toTopOf="@+id/editScoreWis"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toBottomOf="@+id/abilityScoreCon" />
+            app:layout_constraintTop_toBottomOf="@+id/editScoreCon" />
 
 
         <EditText
-            android:id="@+id/abilityScoreWis"
+            android:id="@+id/editScoreWis"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -246,13 +246,13 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="number"
-            app:layout_constraintBottom_toTopOf="@+id/abilityScoreCha"
+            app:layout_constraintBottom_toTopOf="@+id/editScoreCha"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toBottomOf="@+id/abilityScoreInt" />
+            app:layout_constraintTop_toBottomOf="@+id/editScoreInt" />
 
         <EditText
-            android:id="@+id/abilityScoreCha"
+            android:id="@+id/editScoreCha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -263,7 +263,7 @@
             app:layout_constraintBottom_toTopOf="@+id/horiGuideline2"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toBottomOf="@+id/abilityScoreWis" />
+            app:layout_constraintTop_toBottomOf="@+id/editScoreWis" />
 
 
         <TextView
@@ -308,64 +308,64 @@
 
 
         <TextView
-            android:id="@+id/txtStr"
+            android:id="@+id/lblStr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/str"
-            app:layout_constraintBottom_toBottomOf="@+id/abilityScoreStr"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreStr"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/abilityScoreStr" />
+            app:layout_constraintTop_toTopOf="@+id/editScoreStr" />
 
         <TextView
-            android:id="@+id/txtDex"
+            android:id="@+id/lblDex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dex"
-            app:layout_constraintBottom_toBottomOf="@+id/abilityScoreDex"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreDex"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/abilityScoreDex" />
+            app:layout_constraintTop_toTopOf="@+id/editScoreDex" />
 
         <TextView
-            android:id="@+id/txtCon"
+            android:id="@+id/lblCon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/con"
-            app:layout_constraintBottom_toBottomOf="@+id/abilityScoreCon"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreCon"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/abilityScoreCon" />
+            app:layout_constraintTop_toTopOf="@+id/editScoreCon" />
 
         <TextView
             android:id="@+id/txtInt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/intel"
-            app:layout_constraintBottom_toBottomOf="@+id/abilityScoreInt"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreInt"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/abilityScoreInt" />
+            app:layout_constraintTop_toTopOf="@+id/editScoreInt" />
 
         <TextView
-            android:id="@+id/txtWis"
+            android:id="@+id/lblWis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/wis"
-            app:layout_constraintBottom_toBottomOf="@+id/abilityScoreWis"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreWis"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/abilityScoreWis" />
+            app:layout_constraintTop_toTopOf="@+id/editScoreWis" />
 
         <TextView
-            android:id="@+id/txtCha"
+            android:id="@+id/lblCha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cha"
-            app:layout_constraintBottom_toBottomOf="@+id/abilityScoreCha"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreCha"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/abilityScoreCha" />
+            app:layout_constraintTop_toTopOf="@+id/editScoreCha" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/horiGuideline2"
@@ -384,7 +384,7 @@
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/modHistory"
+            app:layout_constraintTop_toBottomOf="@+id/editModHistory"
             android:importantForAutofill="no" />
 
         <EditText
@@ -689,60 +689,60 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/acrobatics_dex"
-            app:layout_constraintBottom_toBottomOf="@+id/modAcrobatics"
+            app:layout_constraintBottom_toBottomOf="@+id/editModAcrobatics"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toTopOf="@+id/modAcrobatics" />
+            app:layout_constraintTop_toTopOf="@+id/editModAcrobatics" />
 
         <TextView
             android:id="@+id/txtAnimal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/animal_handling_wis"
-            app:layout_constraintBottom_toBottomOf="@+id/modAnimal"
+            app:layout_constraintBottom_toBottomOf="@+id/editModAnimal"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toTopOf="@+id/modAnimal" />
+            app:layout_constraintTop_toTopOf="@+id/editModAnimal" />
 
         <TextView
             android:id="@+id/txtArcana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/arcana_int"
-            app:layout_constraintBottom_toBottomOf="@+id/modArcana"
+            app:layout_constraintBottom_toBottomOf="@+id/editModArcana"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toTopOf="@+id/modArcana" />
+            app:layout_constraintTop_toTopOf="@+id/editModArcana" />
 
         <TextView
             android:id="@+id/txtAthletics"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/athletics_str"
-            app:layout_constraintBottom_toBottomOf="@+id/modAthletics"
+            app:layout_constraintBottom_toBottomOf="@+id/editModAthletics"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toTopOf="@+id/modAthletics" />
+            app:layout_constraintTop_toTopOf="@+id/editModAthletics" />
 
         <TextView
             android:id="@+id/txtDeception"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/deception_cha"
-            app:layout_constraintBottom_toBottomOf="@+id/modDeception"
+            app:layout_constraintBottom_toBottomOf="@+id/editModDeception"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toTopOf="@+id/modDeception" />
+            app:layout_constraintTop_toTopOf="@+id/editModDeception" />
 
         <TextView
             android:id="@+id/txtHistory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/history_int"
-            app:layout_constraintBottom_toBottomOf="@+id/modHistory"
+            app:layout_constraintBottom_toBottomOf="@+id/editModHistory"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toTopOf="@+id/modHistory" />
+            app:layout_constraintTop_toTopOf="@+id/editModHistory" />
 
         <TextView
             android:id="@+id/txtInsight"
@@ -829,43 +829,43 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/religion_int"
-            app:layout_constraintBottom_toBottomOf="@+id/modReligion"
+            app:layout_constraintBottom_toBottomOf="@+id/editModReligion"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toTopOf="@+id/modReligion" />
+            app:layout_constraintTop_toTopOf="@+id/editModReligion" />
 
         <TextView
             android:id="@+id/txtSleight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sleight_of_hand_dex"
-            app:layout_constraintBottom_toBottomOf="@+id/modSleight"
+            app:layout_constraintBottom_toBottomOf="@+id/editModSleight"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toTopOf="@+id/modSleight" />
+            app:layout_constraintTop_toTopOf="@+id/editModSleight" />
 
         <TextView
             android:id="@+id/txtStealth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/stealth_dex"
-            app:layout_constraintBottom_toBottomOf="@+id/modStealth"
+            app:layout_constraintBottom_toBottomOf="@+id/editModStealth"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toTopOf="@+id/modStealth" />
+            app:layout_constraintTop_toTopOf="@+id/editModStealth" />
 
         <TextView
             android:id="@+id/txtSurvival"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/survival_wis"
-            app:layout_constraintBottom_toBottomOf="@+id/modSurvival"
+            app:layout_constraintBottom_toBottomOf="@+id/editModSurvival"
             app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
-            app:layout_constraintTop_toTopOf="@+id/modSurvival" />
+            app:layout_constraintTop_toTopOf="@+id/editModSurvival" />
 
         <EditText
-            android:id="@+id/modAcrobatics"
+            android:id="@+id/editModAcrobatics"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -877,7 +877,7 @@
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/modAnimal"
+            android:id="@+id/editModAnimal"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -885,11 +885,11 @@
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/modAcrobatics"
+            app:layout_constraintTop_toBottomOf="@+id/editModAcrobatics"
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/modArcana"
+            android:id="@+id/editModArcana"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -897,11 +897,11 @@
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/modAnimal"
+            app:layout_constraintTop_toBottomOf="@+id/editModAnimal"
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/modAthletics"
+            android:id="@+id/editModAthletics"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -909,11 +909,11 @@
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/modArcana"
+            app:layout_constraintTop_toBottomOf="@+id/editModArcana"
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/modDeception"
+            android:id="@+id/editModDeception"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -921,11 +921,11 @@
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/modAthletics"
+            app:layout_constraintTop_toBottomOf="@+id/editModAthletics"
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/modHistory"
+            android:id="@+id/editModHistory"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -933,11 +933,11 @@
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/modDeception"
+            app:layout_constraintTop_toBottomOf="@+id/editModDeception"
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/modReligion"
+            android:id="@+id/editModReligion"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -949,7 +949,7 @@
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/modSleight"
+            android:id="@+id/editModSleight"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -957,11 +957,11 @@
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/modReligion"
+            app:layout_constraintTop_toBottomOf="@+id/editModReligion"
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/modStealth"
+            android:id="@+id/editModStealth"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -969,11 +969,11 @@
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/modSleight"
+            app:layout_constraintTop_toBottomOf="@+id/editModSleight"
             android:importantForAutofill="no" />
 
         <EditText
-            android:id="@+id/modSurvival"
+            android:id="@+id/editModSurvival"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -983,7 +983,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
-            app:layout_constraintTop_toBottomOf="@+id/modStealth"
+            app:layout_constraintTop_toBottomOf="@+id/editModStealth"
             android:importantForAutofill="no" />
 
         <androidx.constraintlayout.widget.Guideline

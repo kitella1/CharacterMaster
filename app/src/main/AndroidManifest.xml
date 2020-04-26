@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.charactermaster">
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,11 +15,6 @@
             android:name=".CharacterDetails"
             android:label="@string/title_activity_character_details"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".newCharacter" />
-        <activity
-            android:name=".CharacterActivity"
-            android:label="@string/title_activity_character"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".GrimoireActivity"
             android:label="@string/title_activity_grimoire"

@@ -16,7 +16,7 @@
             tools:context=".Fragments.FragGeneral">
 
                 <TextView
-                    android:id="@+id/txtName"
+                    android:id="@+id/lblName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/name"
@@ -42,7 +42,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/txtPicture"
+                    android:id="@+id/lblPicture"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="23dp"
@@ -76,13 +76,14 @@
                     android:layout_marginEnd="16dp"
                     android:text="@string/upload_image"
                     android:visibility="visible"
+                    android:onClick=""
                     app:layout_constraintBottom_toTopOf="@+id/spinClass"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline3"
                     app:layout_constraintTop_toBottomOf="@+id/imgProfile" />
 
                 <TextView
-                    android:id="@+id/txtClass"
+                    android:id="@+id/lblClass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/txtClass"
@@ -103,7 +104,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/btnUpload" />
 
                 <TextView
-                    android:id="@+id/textLevel"
+                    android:id="@+id/lblLevel"
                     android:layout_width="wrap_content"
                     android:layout_height="15dp"
                     android:layout_marginTop="7dp"
@@ -128,7 +129,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/spinClass" />
 
                 <TextView
-                    android:id="@+id/textXP"
+                    android:id="@+id/lblXP"
                     android:layout_width="wrap_content"
                     android:layout_height="15dp"
                     android:text="@string/xp"
@@ -152,7 +153,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/editLevel" />
 
                 <TextView
-                    android:id="@+id/txtAlignment"
+                    android:id="@+id/lblAlignment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/alignment"
@@ -176,7 +177,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/editXP" />
 
                 <TextView
-                    android:id="@+id/txtRace"
+                    android:id="@+id/lblRace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/race"
