@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".MainActivity">
+    tools:context=".GrimoireActivity">
 
     <ImageView
         android:id="@+id/imgProfileImage"
@@ -17,12 +17,12 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="h,"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtName"
+        android:id="@+id/lblName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -30,11 +30,11 @@
         android:layout_marginEnd="8dp"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/guideline16"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtRace"
+        android:id="@+id/lblRace"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -42,11 +42,11 @@
         android:layout_marginEnd="8dp"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+        app:layout_constraintStart_toEndOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/lblName" />
 
     <TextView
-        android:id="@+id/txtClass"
+        android:id="@+id/lblClass"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -54,8 +54,8 @@
         android:layout_marginEnd="8dp"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/txtRace" />
+        app:layout_constraintStart_toEndOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/lblRace" />
 
     <TextView
         android:id="@+id/txtLevel"
@@ -68,11 +68,11 @@
         android:maxLines="4"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/txtClass" />
+        app:layout_constraintStart_toEndOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/lblClass" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnDetails"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -80,13 +80,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/details"
+        android:onClick=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/guideline16"
         app:layout_constraintTop_toBottomOf="@+id/txtLevel" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/guideline16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"

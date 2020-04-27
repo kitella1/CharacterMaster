@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editSavInt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editSavWis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editSavCon" />
+
+        <EditText
+            android:id="@+id/editSavWis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editSavCha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editSavInt" />
+
+        <EditText
+            android:id="@+id/editSavCha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/horiGuideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editSavWis" />
+
+        <EditText
+            android:id="@+id/editSavCon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editSavInt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editSavDex" />
+
+        <EditText
+            android:id="@+id/editSavDex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editSavCon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editSavStr" />
+
+        <EditText
+            android:id="@+id/editSavStr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editSavDex"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <EditText
+            android:id="@+id/editModStr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editModDex"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <EditText
+            android:id="@+id/editModDex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editModCon"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toBottomOf="@+id/editModStr" />
+
+        <EditText
+            android:id="@+id/editModCon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editModInt"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toBottomOf="@+id/editModDex" />
+
+        <EditText
+            android:id="@+id/editModInt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editModWis"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toBottomOf="@+id/editModCon" />
+
+        <EditText
+            android:id="@+id/editModWis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editModCha"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toBottomOf="@+id/editModInt" />
+
+        <EditText
+            android:id="@+id/editModCha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/horiGuideline2"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toBottomOf="@+id/editModWis" />
+
+        <EditText
+            android:id="@+id/editScoreStr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editScoreDex"
+            app:layout_constraintEnd_toStartOf="@+id/guideline14"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <EditText
+            android:id="@+id/editScoreDex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editScoreCon"
+            app:layout_constraintEnd_toStartOf="@+id/guideline14"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toBottomOf="@+id/editScoreStr" />
+
+        <EditText
+            android:id="@+id/editScoreCon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editScoreInt"
+            app:layout_constraintEnd_toStartOf="@+id/guideline14"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toBottomOf="@+id/editScoreDex" />
+
+        <EditText
+            android:id="@+id/editScoreInt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editScoreWis"
+            app:layout_constraintEnd_toStartOf="@+id/guideline14"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toBottomOf="@+id/editScoreCon" />
+
+
+        <EditText
+            android:id="@+id/editScoreWis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editScoreCha"
+            app:layout_constraintEnd_toStartOf="@+id/guideline14"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toBottomOf="@+id/editScoreInt" />
+
+        <EditText
+            android:id="@+id/editScoreCha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/horiGuideline2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline14"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toBottomOf="@+id/editScoreWis" />
+
+
+        <TextView
+            android:id="@+id/lblAbility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ability"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toStartOf="@+id/guideline14"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblModifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modifier"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblSaving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saving_throw"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/lblStr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreStr"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editScoreStr" />
+
+        <TextView
+            android:id="@+id/lblDex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dex"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreDex"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editScoreDex" />
+
+        <TextView
+            android:id="@+id/lblCon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/con"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreCon"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editScoreCon" />
+
+        <TextView
+            android:id="@+id/txtInt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intel"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreInt"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editScoreInt" />
+
+        <TextView
+            android:id="@+id/lblWis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wis"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreWis"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editScoreWis" />
+
+        <TextView
+            android:id="@+id/lblCha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cha"
+            app:layout_constraintBottom_toBottomOf="@+id/editScoreCha"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editScoreCha" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horiGuideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="398dp" />
+
+
+        <EditText
+            android:id="@+id/modInsight"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editModHistory"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/modIntimidation"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/modInsight"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/modInvestigation"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/modIntimidation"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/modMedicine"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/modInvestigation"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/modNature"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/modMedicine"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/modPerception"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/modNature"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/modPerformance"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/modPerception"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/modPersuasion"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/modPerformance"
+            android:importantForAutofill="no" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horiGuideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="441dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertGuideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertGuideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <TextView
+            android:id="@+id/lblProficient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proficiency"
+            app:layout_constraintBottom_toTopOf="@+id/horiGuideline1"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/horiGuideline2" />
+
+        <TextView
+            android:id="@+id/lblSkill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skills"
+            app:layout_constraintBottom_toTopOf="@+id/horiGuideline1"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/horiGuideline2" />
+
+        <TextView
+            android:id="@+id/lblMod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modifier"
+            app:layout_constraintBottom_toTopOf="@+id/horiGuideline1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toTopOf="@+id/horiGuideline2" />
+
+        <CheckBox
+            android:id="@+id/chkAcrobatics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtAcrobatics"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtAcrobatics" />
+
+        <CheckBox
+            android:id="@+id/chkArcana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtArcana"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtArcana" />
+
+        <CheckBox
+            android:id="@+id/chkAthletics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtAthletics"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtAthletics" />
+
+        <CheckBox
+            android:id="@+id/chkDeception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtDeception"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtDeception" />
+
+        <CheckBox
+            android:id="@+id/chkHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtHistory"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtHistory" />
+
+        <CheckBox
+            android:id="@+id/chkInsight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtInsight"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtInsight" />
+
+        <CheckBox
+            android:id="@+id/chkIntimidation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtIntimidation"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtIntimidation" />
+
+        <CheckBox
+            android:id="@+id/chkInvestigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtInvestigation"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtInvestigation" />
+
+        <CheckBox
+            android:id="@+id/chkMedicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtMedicine"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtMedicine" />
+
+        <CheckBox
+            android:id="@+id/chkNature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtNature"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtNature" />
+
+        <CheckBox
+            android:id="@+id/chkPerception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtPerception"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtPerception" />
+
+        <CheckBox
+            android:id="@+id/chkPerformance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtPerformance"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtPerformance" />
+
+        <CheckBox
+            android:id="@+id/chkAnimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtAnimal"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtAnimal" />
+
+        <CheckBox
+            android:id="@+id/chkPersuasion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtPersuasion"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtPersuasion" />
+
+        <CheckBox
+            android:id="@+id/chkReligion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtReligion"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtReligion" />
+
+        <CheckBox
+            android:id="@+id/chkSleight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtSleight"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtSleight" />
+
+        <CheckBox
+            android:id="@+id/chkStealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtStealth"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtStealth" />
+
+        <CheckBox
+            android:id="@+id/chkSurvival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/txtSurvival"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtSurvival" />
+
+        <TextView
+            android:id="@+id/txtAcrobatics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acrobatics_dex"
+            app:layout_constraintBottom_toBottomOf="@+id/editModAcrobatics"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/editModAcrobatics" />
+
+        <TextView
+            android:id="@+id/txtAnimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/animal_handling_wis"
+            app:layout_constraintBottom_toBottomOf="@+id/editModAnimal"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/editModAnimal" />
+
+        <TextView
+            android:id="@+id/txtArcana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arcana_int"
+            app:layout_constraintBottom_toBottomOf="@+id/editModArcana"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/editModArcana" />
+
+        <TextView
+            android:id="@+id/txtAthletics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/athletics_str"
+            app:layout_constraintBottom_toBottomOf="@+id/editModAthletics"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/editModAthletics" />
+
+        <TextView
+            android:id="@+id/txtDeception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deception_cha"
+            app:layout_constraintBottom_toBottomOf="@+id/editModDeception"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/editModDeception" />
+
+        <TextView
+            android:id="@+id/txtHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history_int"
+            app:layout_constraintBottom_toBottomOf="@+id/editModHistory"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/editModHistory" />
+
+        <TextView
+            android:id="@+id/txtInsight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insight_wis"
+            app:layout_constraintBottom_toBottomOf="@+id/modInsight"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/modInsight" />
+
+        <TextView
+            android:id="@+id/txtIntimidation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intimidation_cha"
+            app:layout_constraintBottom_toBottomOf="@+id/modIntimidation"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/modIntimidation" />
+
+        <TextView
+            android:id="@+id/txtInvestigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/investigation_int"
+            app:layout_constraintBottom_toBottomOf="@+id/modInvestigation"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/modInvestigation" />
+
+        <TextView
+            android:id="@+id/txtMedicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medicine_wis"
+            app:layout_constraintBottom_toBottomOf="@+id/modMedicine"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/modMedicine" />
+
+        <TextView
+            android:id="@+id/txtNature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nature_int"
+            app:layout_constraintBottom_toBottomOf="@+id/modNature"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/modNature" />
+
+        <TextView
+            android:id="@+id/txtPerception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perception_wis"
+            app:layout_constraintBottom_toBottomOf="@+id/modPerception"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/modPerception" />
+
+        <TextView
+            android:id="@+id/txtPerformance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/performance_cha"
+            app:layout_constraintBottom_toBottomOf="@+id/modPerformance"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/modPerformance" />
+
+        <TextView
+            android:id="@+id/txtPersuasion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/persuasion_cha"
+            app:layout_constraintBottom_toBottomOf="@+id/modPersuasion"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/modPersuasion" />
+
+        <TextView
+            android:id="@+id/txtReligion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/religion_int"
+            app:layout_constraintBottom_toBottomOf="@+id/editModReligion"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/editModReligion" />
+
+        <TextView
+            android:id="@+id/txtSleight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sleight_of_hand_dex"
+            app:layout_constraintBottom_toBottomOf="@+id/editModSleight"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/editModSleight" />
+
+        <TextView
+            android:id="@+id/txtStealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stealth_dex"
+            app:layout_constraintBottom_toBottomOf="@+id/editModStealth"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/editModStealth" />
+
+        <TextView
+            android:id="@+id/txtSurvival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/survival_wis"
+            app:layout_constraintBottom_toBottomOf="@+id/editModSurvival"
+            app:layout_constraintEnd_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline1"
+            app:layout_constraintTop_toTopOf="@+id/editModSurvival" />
+
+        <EditText
+            android:id="@+id/editModAcrobatics"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toTopOf="@+id/horiGuideline1"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editModAnimal"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editModAcrobatics"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editModArcana"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editModAnimal"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editModAthletics"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editModArcana"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editModDeception"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editModAthletics"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editModHistory"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editModDeception"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editModReligion"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/modPersuasion"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editModSleight"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editModReligion"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editModStealth"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editModSleight"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editModSurvival"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertGuideline2"
+            app:layout_constraintTop_toBottomOf="@+id/editModStealth"
+            android:importantForAutofill="no" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="34dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
