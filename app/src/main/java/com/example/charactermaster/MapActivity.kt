@@ -58,10 +58,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
     }
 
     private fun isNetworkConnected(): Boolean {
-        //get network information
         val networkInfo = (this?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager).activeNetworkInfo
 
-        //check if device connected to available network
         return networkInfo != null && networkInfo.isConnected
     }
 
@@ -122,7 +120,6 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
 
         override fun onResponse(call: Call<MapData>, response: Response<MapData>) {
             Toast.makeText(this@MapActivity,"Reached", Toast.LENGTH_LONG).show()
-            Log.i("Api Response", response.toString())
             val results = response.body()!!.results
 
             for(result in results) {

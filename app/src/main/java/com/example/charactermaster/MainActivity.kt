@@ -20,18 +20,15 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //create instance of SensorManager class
         sensorManager = getSystemService(Context.SENSOR_SERVICE)
                 as SensorManager
 
-        //get the default light sensor
         light = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT)
     }
 
     override fun onResume() {
         super.onResume()
         light?.let { light ->
-            //add listener with default sampling interval
             sensorManager.registerListener(this, light,
                 SensorManager.SENSOR_DELAY_NORMAL)
         }
@@ -59,8 +56,6 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     }
 
     override fun onSensorChanged(event: SensorEvent) {
-        //light sensor returns a single value
-
         val lux = event.values[0]
         //value based on https://www.engineeringtoolbox.com/light-level-rooms-d_708.html
         if(lux < 100)
