@@ -17,13 +17,6 @@ private const val CHARACTER = "character"
 class FragChar : Fragment() {
     private var character: Character? = null
 
-    private var editBackground: EditText? = null
-    private val editAppearance: EditText? = null
-    private val editFlaws: EditText? = null
-    private val editBonds: EditText? = null
-    private val editTraits: EditText? = null
-    private val editIdeals: EditText? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {

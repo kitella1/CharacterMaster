@@ -31,23 +31,20 @@ class GrimoireActivity : AppCompatActivity(), SensorEventListener {
         val storage = Storage(this)
         val chars = storage.loadCharacters()
 
-        //create instance of SensorManager class
         sensorManager = getSystemService(Context.SENSOR_SERVICE)
                 as SensorManager
 
-        //get the default light sensor
         light = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT)
 
-        //link to recycler view
         recyclerView.adapter = CharacterAdapter(this, chars).apply {
             recyclerView.layoutManager = LinearLayoutManager(applicationContext)
         }
 
         val refresher: SwipeRefreshLayout = pullToRefresh
         refresher.setOnRefreshListener {
-            val storage = Storage(this)
-            val chars = storage.loadCharacters()
-            recyclerView.adapter = CharacterAdapter(this, chars).apply {
+            val store = Storage(this)
+            val characters = store.loadCharacters()
+            recyclerView.adapter = CharacterAdapter(this, characters).apply {
                 recyclerView.layoutManager = LinearLayoutManager(applicationContext)
             }
             (recyclerView.adapter as CharacterAdapter).notifyDataSetChanged()
@@ -63,7 +60,6 @@ class GrimoireActivity : AppCompatActivity(), SensorEventListener {
     override fun onResume() {
         super.onResume()
         light?.let { light ->
-            //add listener with default sampling interval
             sensorManager.registerListener(this, light,
                 SensorManager.SENSOR_DELAY_NORMAL)
         }
@@ -71,19 +67,14 @@ class GrimoireActivity : AppCompatActivity(), SensorEventListener {
 
     override fun onPause() {
         super.onPause()
-        //remove listener
         sensorManager.unregisterListener(this)
     }
 
     override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {
-        //code to be executed when accuracy changes
-        //not needed if accuracy is not a factor
         //Toast.makeText(this, "Accuracy change", Toast.LENGTH_LONG).show()
     }
 
     override fun onSensorChanged(event: SensorEvent) {
-        //light sensor returns a single value
-
         val lux = event.values[0]
         //value based on https://www.engineeringtoolbox.com/light-level-rooms-d_708.html
         if(lux < 100)

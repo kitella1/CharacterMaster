@@ -7,17 +7,13 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 class MapRetriever {
     fun getNearbyPlaces(callback: Callback<MapData>, lat: Double, long:Double, radius:Int, keyword:String, key:String) {
-        //build retrofit object and convert using Moshi
         val retrofit = Retrofit.Builder()
             .baseUrl("https://maps.googleapis.com/maps/api/")
             .addConverterFactory(MoshiConverterFactory.create())
             .build()
 
-
-        //call API
         val service = retrofit.create(MapService::class.java)
         val call= service.useMapService("$lat,$long", radius, keyword, key)
         call.enqueue(callback)
     }
-
 }

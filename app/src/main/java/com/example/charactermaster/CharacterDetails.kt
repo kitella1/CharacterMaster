@@ -25,11 +25,9 @@ class CharacterDetails : AppCompatActivity(), SensorEventListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_details)
 
-        //create instance of SensorManager class
         sensorManager = getSystemService(Context.SENSOR_SERVICE)
                 as SensorManager
 
-        //get the default light sensor
         light = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT)
 
         character = intent.getParcelableExtra<Character>("EXTRA_CHAR")
@@ -51,7 +49,6 @@ class CharacterDetails : AppCompatActivity(), SensorEventListener {
     override fun onResume() {
         super.onResume()
         light?.let { light ->
-            //add listener with default sampling interval
             sensorManager.registerListener(this, light,
                 SensorManager.SENSOR_DELAY_NORMAL)
         }
@@ -59,19 +56,14 @@ class CharacterDetails : AppCompatActivity(), SensorEventListener {
 
     override fun onPause() {
         super.onPause()
-        //remove listener
         sensorManager.unregisterListener(this)
     }
 
     override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {
-        //code to be executed when accuracy changes
-        //not needed if accuracy is not a factor
         //Toast.makeText(this, "Accuracy change", Toast.LENGTH_LONG).show()
     }
 
     override fun onSensorChanged(event: SensorEvent) {
-        //light sensor returns a single value
-
         val lux = event.values[0]
         //value based on https://www.engineeringtoolbox.com/light-level-rooms-d_708.html
         if(lux < 100)
