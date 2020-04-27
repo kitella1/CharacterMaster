@@ -42,9 +42,9 @@ class GrimoireActivity : AppCompatActivity(), SensorEventListener {
 
         val refresher: SwipeRefreshLayout = pullToRefresh
         refresher.setOnRefreshListener {
-            val storage = Storage(this)
-            val chars = storage.loadCharacters()
-            recyclerView.adapter = CharacterAdapter(this, chars).apply {
+            val store = Storage(this)
+            val characters = store.loadCharacters()
+            recyclerView.adapter = CharacterAdapter(this, characters).apply {
                 recyclerView.layoutManager = LinearLayoutManager(applicationContext)
             }
             (recyclerView.adapter as CharacterAdapter).notifyDataSetChanged()

@@ -77,10 +77,8 @@ class FragGeneral : Fragment() {
     }
 
     private fun isNetworkConnected(): Boolean {
-        //get network information
         val networkInfo = (activity?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager).activeNetworkInfo
 
-        //check if device connected to available network
         return networkInfo != null && networkInfo.isConnected
     }
 
@@ -92,7 +90,6 @@ class FragGeneral : Fragment() {
             Log.i("API Error", t.message)
         }
 
-        //function to be executed if API call successful
         override fun onResponse(call: Call<DnDData>, response: Response<DnDData>) {
             val classArray = arrayListOf<String>()
 

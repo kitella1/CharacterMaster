@@ -58,7 +58,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
     }
 
     private fun isNetworkConnected(): Boolean {
-        val networkInfo = (this?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager).activeNetworkInfo
+        val networkInfo = (this.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager).activeNetworkInfo
 
         return networkInfo != null && networkInfo.isConnected
     }
@@ -97,7 +97,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
                 if (isNetworkConnected()) {
                     MapRetriever().getNearbyPlaces(mapCallback, myLocation.latitude, myLocation.longitude, 50000, "game", GOOGLE_MAPS_KEY)
                 } else {
-                    AlertDialog.Builder(this?.applicationContext)
+                    AlertDialog.Builder(this.applicationContext)
                         .setTitle("Internet Connection")
                         .setMessage("Please check your internet connection")
                         .setPositiveButton(android.R.string.ok) { _, _ -> }
