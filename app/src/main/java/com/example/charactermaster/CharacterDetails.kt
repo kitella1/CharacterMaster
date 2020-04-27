@@ -66,7 +66,7 @@ class CharacterDetails : AppCompatActivity(), SensorEventListener {
     override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {
         //code to be executed when accuracy changes
         //not needed if accuracy is not a factor
-        Toast.makeText(this, "Accuracy change", Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, "Accuracy change", Toast.LENGTH_LONG).show()
     }
 
     override fun onSensorChanged(event: SensorEvent) {

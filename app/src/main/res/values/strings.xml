@@ -74,7 +74,7 @@
     <string name="saving_throw">Saving Throw</string>
     <string name="modifier">Modifier</string>
     <string name="score">Score</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_map">Map</string>
+    <string name="buy_dnd_resources"><![CDATA[Buy D&d Resources]]></string>
 </resources>

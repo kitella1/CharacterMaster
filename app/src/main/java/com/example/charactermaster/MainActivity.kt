@@ -49,6 +49,11 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         startActivity(grimIntent)
     }
 
+    fun viewMap (view: View?) {
+        val mapIntent = Intent(this, MapActivity::class.java)
+        startActivity(mapIntent)
+    }
+
     override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {
         //code to be executed when accuracy changes
         //not needed if accuracy is not a factor
