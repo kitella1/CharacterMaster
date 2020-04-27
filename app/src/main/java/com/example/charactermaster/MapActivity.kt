@@ -32,6 +32,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private lateinit var myLocation: Location
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
@@ -39,6 +40,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
+
+        GOOGLE_MAPS_KEY = resources.getString(R.string.google_maps_key)
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
     }
@@ -84,7 +87,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
 
                 //check for network connection
                 if (isNetworkConnected()) {
-                    MapRetriever().getNearbyPlaces(MapCallback, myLocation.latitude, myLocation.longitude, 50000, "game", "AIzaSyDoC-CtilUhofsTjfMRtBIvBCMCWGwV1Is")
+                    MapRetriever().getNearbyPlaces(MapCallback, myLocation.latitude, myLocation.longitude, 50000, "game", GOOGLE_MAPS_KEY)
                 } else {
                     //build and output alert dialog
                     AlertDialog.Builder(this?.applicationContext)
@@ -95,7 +98,6 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
                         .show()
                 }
             }
-
         }
     }
 
@@ -127,5 +129,6 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
 
     companion object {
         private const val LOCATION_PERMISSION_REQUEST_CODE = 1
+        private var GOOGLE_MAPS_KEY = ""
     }
 }
