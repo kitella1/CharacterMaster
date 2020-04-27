@@ -12,10 +12,10 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.charactermaster.Character
+import com.example.charactermaster.DnDData
 import com.example.charactermaster.R
 import kotlinx.android.synthetic.main.fragment_general.view.*
 import com.example.charactermaster.DnDRetriever
-import com.example.charactermaster.DnDData
 import kotlinx.android.synthetic.main.fragment_general.*
 import retrofit2.Call
 import retrofit2.Callback
