@@ -58,7 +58,6 @@ class Storage(val context: Context, val prefName: String = "") {
                 charPrefs.getString("bonds", ""),
                 charPrefs.getString("flaws", "")
             )
-            Log.i("Character found", c.toString())
             chars.add(c)
         }
 

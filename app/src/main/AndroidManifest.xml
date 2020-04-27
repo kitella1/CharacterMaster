@@ -13,15 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:networkSecurityConfig="@xml/network_security_config">
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:forceDarkAllowed="true">
         <activity
             android:name=".CharacterDetails"
             android:label="@string/title_activity_character_details"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/FullAppTheme" />
         <activity
             android:name=".GrimoireActivity"
             android:label="@string/title_activity_grimoire"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/FullAppTheme" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/FullAppTheme">

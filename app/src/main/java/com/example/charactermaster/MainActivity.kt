@@ -8,16 +8,13 @@ import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 
 class MainActivity : AppCompatActivity(), SensorEventListener {
 
     private lateinit var sensorManager: SensorManager
     private var light: Sensor? = null
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,7 +52,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {
         //code to be executed when accuracy changes
         //not needed if accuracy is not a factor
-        /*Toast.makeText(this, "Accuracy change", Toast.LENGTH_LONG).show()*/
+        //Toast.makeText(this, "Accuracy change", Toast.LENGTH_LONG).show()
     }
 
     override fun onSensorChanged(event: SensorEvent) {
@@ -65,22 +62,19 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         //value based on https://www.engineeringtoolbox.com/light-level-rooms-d_708.html
         if(lux < 100)
         {
-            applyTheme("dark")
+            applyAppTheme("dark")
         }
         else
         {
-            applyTheme("light")
+            applyAppTheme("light")
         }
     }
 
-    fun applyTheme(theme: String) {
+    private fun applyAppTheme(theme: String) {
         when (theme) {
             "light" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             "dark" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            "default" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-
         }
     }
-
 }
 
